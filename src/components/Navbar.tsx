@@ -1,8 +1,9 @@
 // import React from "react";
-import { Input } from "@nextui-org/react";
+import { Input, Dropdown, DropdownTrigger } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMagnifyingGlass, faShoppingBag } from "@fortawesome/free-solid-svg-icons"
 import { faUser } from "@fortawesome/free-regular-svg-icons"
+import NavbarDropdown from "./NavbarDropdown";
 import "./Navbar.css";
 
 export default function NavbarThriftPick() {
@@ -32,15 +33,95 @@ export default function NavbarThriftPick() {
 				</div>
 
 				<ul className="sub-nav flex flex-row justify-between w-screen px-32 py-4 border-y-1 border-y-black text-lg">
-					<li>Women</li>
-					<li>Men</li>
-					<li>Kids</li>
-					<li>Plus Size</li>
-					<li>Accessories</li>
-					<li>Occassion</li>
-					<li>Trending</li>
-					<li>Sale</li>
-					<li>More</li>
+					<li>
+						<Dropdown radius="none" containerPadding={10} classNames={{
+							content: "font-serif"
+						}}>
+							<DropdownTrigger>
+								Women
+							</DropdownTrigger>
+							<NavbarDropdown />
+						</Dropdown>
+					</li>
+					<li>
+						<Dropdown radius="none" containerPadding={10} classNames={{
+							content: "font-serif"
+						}}>
+							<DropdownTrigger>
+								Men
+							</DropdownTrigger>
+							<NavbarDropdown />
+						</Dropdown></li>
+					<li>
+						<Dropdown radius="none" containerPadding={10} classNames={{
+							content: "font-serif"
+						}}>
+							<DropdownTrigger>
+								Kids
+							</DropdownTrigger>
+							<NavbarDropdown />
+						</Dropdown>
+					</li>
+					<li>
+						<Dropdown radius="none" containerPadding={10} classNames={{
+							content: "font-serif"
+						}}>
+							<DropdownTrigger>
+								Plus Size
+							</DropdownTrigger>
+							<NavbarDropdown />
+						</Dropdown>
+					</li>
+					<li>
+						<Dropdown radius="none" containerPadding={10} classNames={{
+							content: "font-serif"
+						}}>
+							<DropdownTrigger>
+								Accessories
+							</DropdownTrigger>
+							<NavbarDropdown />
+						</Dropdown>
+					</li>
+					<li>
+						<Dropdown radius="none" containerPadding={10} classNames={{
+							content: "font-serif"
+						}}>
+							<DropdownTrigger>
+								Occassion
+							</DropdownTrigger>
+							<NavbarDropdown />
+						</Dropdown>
+					</li>
+					<li>
+						<Dropdown radius="none" containerPadding={10} classNames={{
+							content: "font-serif"
+						}}>
+							<DropdownTrigger>
+								Trending
+							</DropdownTrigger>
+							<NavbarDropdown />
+						</Dropdown>
+					</li>
+					<li>
+						<Dropdown radius="none" containerPadding={10} classNames={{
+							content: "font-serif"
+						}}>
+							<DropdownTrigger>
+								Sale
+							</DropdownTrigger>
+							<NavbarDropdown />
+						</Dropdown>
+					</li>
+					<li>
+						<Dropdown radius="none" containerPadding={10} classNames={{
+							content: "font-serif"
+						}}>
+							<DropdownTrigger>
+								More
+							</DropdownTrigger>
+							<NavbarDropdown />
+						</Dropdown>
+					</li>
 				</ul>
 			</nav>
 		</>
