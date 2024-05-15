@@ -1,5 +1,5 @@
 .dropdown-item-header {
-	@apply font-bold !important;
+	@apply font-bold mb-2 !important;
 }
 .nav-dropdown-section {
 	@apply mx-10 my-5;
