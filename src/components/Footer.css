@@ -1,0 +1,47 @@
+footer {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer>div:first-child {
+	background: #111;
+}
+footer>div:first-child .yellow {
+	color: #FAF33E;
+}
+
+footer>div:first-child p:nth-child(2) {
+	font-family: Broadway;
+}
+
+footer>div:first-child>div:nth-child(2) {
+	font-family: Broadway;
+}
+
+footer>div:nth-child(2) {
+	background: #D9D9D9;
+}
+
+footer>div:nth-child(2) {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer>div:nth-child(2) p {
+	margin-bottom: 8px;
+	color: #111;
+}
+footer>div:nth-child(2) .title {
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+footer .copyright {
+	font-family: Inter;
+	color: #111;
+}
+
+footer hr {
+	color: #111;
+	background: #111;
+	border-color: #111;
+}
